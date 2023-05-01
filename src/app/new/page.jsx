@@ -19,7 +19,7 @@ const New = () => {
     settask({ ...task, [target.name]: target.value })
   }
   return (
-    <div className="border border-solid m-3  p-3">
+    <div className="border border-solid m-3   max-w-lg mx-auto p-3">
       <h1 className="text-3xl text-center">Nuevo</h1>
       <form onSubmit={onSubmit} className="flex flex-col">
         <div className="">
@@ -41,9 +41,7 @@ const New = () => {
       }
       <hr />
       <br /><br />
-      {
-        JSON.stringify(tasks,null,2)
-      }
+
     </div>
   )
 }
